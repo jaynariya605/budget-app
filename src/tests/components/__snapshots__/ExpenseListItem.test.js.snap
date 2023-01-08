@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shoud renser expenselist item 1`] = `
+<Link
+  className="list-item"
+  to="/edit/2"
+>
+  <div>
+    <h3
+      className="list-item__title"
+    >
+      rent
+    </h3>
+    <span
+      className="list-item__subtitle"
+    >
+      December 27th, 1969
+    </span>
+  </div>
+  <h3
+    className="list-item__data"
+  >
+    $10.95
+  </h3>
+</Link>
+`;
