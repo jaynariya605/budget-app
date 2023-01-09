@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import Header from '../components/Header'
 import DashBoard from '../components/DashBoard';
+
 import AddExpense from '../components/AddExpense';
 import EditExpense from '../components/EditExpense';
 import LoginPage from '../components/LoginPage';
 import ProtectedRoute from'./ProtectedRoute';
 import LoginRouter from'./LoginRouter';
+import LoadingPage from '../components/LoadingPage';
 
 
-
+//const DashBoard = lazy(()=> import("../components/DashBoard"))
 const AppRouter = createBrowserRouter([
     {
         path:"/",
         element: <LoginRouter><LoginPage /></LoginRouter>,
     },{
         path: "/dashboard",
-        element:<> <Header/> <ProtectedRoute><DashBoard/> </ProtectedRoute> </>
+        element:<> <Header/><ProtectedRoute><DashBoard/> </ProtectedRoute> </>
     },{
         path: "/create",
         element:<> <Header/> <ProtectedRoute><AddExpense/> </ProtectedRoute> </>

@@ -10,3 +10,15 @@
     height: 6rem;
     width: 6rem;
 }
+
+.loader__image--list {
+    height: 3rem;
+    width: 3rem;
+}
+
+.loadinglist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
